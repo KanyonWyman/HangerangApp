@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     mywebview = (WebView)findViewById(R.id.webview);
     WebSettings webSettings = mywebview.getSettings();
     webSettings.setJavaScriptEnabled(true);
+    mywebview.getSettings().setDomStorageEnabled(true);
     mywebview.loadUrl("https://hang.coffee/");
     //Code for opening the app
     mywebview.setWebViewClient(new WebViewClient());
